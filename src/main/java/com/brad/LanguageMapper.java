@@ -9,7 +9,8 @@ public class LanguageMapper {
         else if( language.equalsIgnoreCase("russian")){
             return "ru";
         }
-
-        return "";
+        else{
+            throw new IllegalArgumentException(language);
+        }
     }
 }
